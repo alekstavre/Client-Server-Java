@@ -99,6 +99,14 @@ public class EchoServer extends AbstractServer {
 	synchronized protected void clientDisconnected(ConnectionToClient client) {
 		System.out.println("the client: " + client + " has disconnected!");
 	}
+	/**
+	 * @lex
+	 * Method added to test AbstractFactory in section 6.14
+	 */
+	public void setConnectionFactory(SpecificConnectionFactory specificConnectionFactory) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	/**
 	 * @lex Method called on ServerConsole input. It displays the input in the
@@ -126,5 +134,7 @@ public class EchoServer extends AbstractServer {
 			System.out.println("unknown command! ");
 
 	}
+
+	
 }
 //End of EchoServer class

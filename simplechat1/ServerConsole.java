@@ -61,6 +61,7 @@ public class ServerConsole implements ChatIF {
 		ServerConsole console = new ServerConsole(port);
 
 		try {
+			server.setConnectionFactory(new SpecificConnectionFactory());
 			server.listen(); // Start listening for connections
 		} catch (Exception ex) {
 			System.out.println("ERROR - Could not listen for clients!");
